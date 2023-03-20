@@ -1,0 +1,133 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('jonathan-bowers-BqKdvJ8a5TI-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 120%;
+    overflow: hidden;
+  }
+  
+  .text-3 {
+    font-size: 60px;
+    color: rgb(2, 2, 2);
+    text-shadow: #fbf8f8fa;
+    margin: 25px 20px;
+    text-align: center;
+}
+
+.text-3 span {
+  color: rgb(238, 245, 243);
+  font-weight: 500;
+}
+
+@media (max-width: 690px) {
+
+    .text-3 {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .text-3 {
+        font-size: 22px;
+    }
+
+}
+@media (max-width: 420px) {
+
+    .card {
+        font-size: 12px;
+        /* background-color: aqua; */
+        /* max-width: 200px; */
+    }
+
+}
+
+  .card {
+    background: #000000fa;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    max-width: 420px;
+    margin: 1em auto;
+    box-shadow: 0px -1px 20px 4px rgb(58, 55, 55);
+    /* transition: 0.5s; */
+
+  }
+  
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #f8f4f4f1;
+    color: rgb(69, 66, 66);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #f8f4f4f1;
+    color: rgb(69, 66, 66);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
